@@ -6,7 +6,7 @@ function ProfileDetails() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/users")
+    fetch("https://full-stack-pwa-api.vercel.app/users")
       .then((res) => res.json())
       .then((data) => {
         setUsers(data);
