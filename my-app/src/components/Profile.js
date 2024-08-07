@@ -37,7 +37,7 @@ function ProfileFill() {
 
     console.log("formData", formData)
 
-    fetch("https://full-stack-pwa-api.vercel.app//single", {
+    fetch("https://full-stack-pwa-api.vercel.app/single", {
       method: "POST",
       body: formData,
     })
