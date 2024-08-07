@@ -39,6 +39,7 @@ function ProfileFill() {
 
     fetch("https://full-stack-pwa-api.vercel.app/single", {
       method: "POST",
+      mode: "no-cors",
       body: formData,
     })
       .then((res) => {
