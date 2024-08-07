@@ -79,7 +79,7 @@ app.get('/users', async(req, res)=>{
 
 app.listen(8000, async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/users");
+    await mongoose.connect("mongodb+srv://uttreshwarnakhate:answer123@cluster0.4ng3e.mongodb.net/users");
 
     console.log("database is connected:");
   } catch (error) {
