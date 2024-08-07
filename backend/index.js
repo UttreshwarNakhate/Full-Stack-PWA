@@ -7,7 +7,10 @@ const path = require('path')
 
 const app = express();
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+  origin: 'https://full-stack-pwa-frontend.vercel.app'
+}));
+
 app.use(express.static('uploads'));
 
 
